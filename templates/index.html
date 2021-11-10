@@ -1,0 +1,91 @@
+<html>
+<head><link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'></head>
+<body>
+    <style>
+
+        body {
+        background-image: url("static/background1.jpeg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        
+      }
+      .bg-dark {
+          background-color: #42678c!important;
+      }
+      
+      #result {
+          color: #0a1c4ed1;
+      }
+      .col-sm{
+          text-align: center;
+      }
+      .badge-badge-danger{
+        /* color:red; */
+        /* border: 2px solid black; */
+        padding: 2%;
+        margin: 0px 0px 0px 0px;
+        background-color: rgb(128, 9, 49);
+        color: white;
+        font-size: 100%;
+        font-family: 'Sofia';
+      }
+      .right{
+        
+        margin-top: 4%;
+      }
+      .inp{
+        background: rgb(175, 70, 87);
+        border: none;
+        border-radius: 5%;
+        width:10%;
+        height:5%;
+        font-size: 90%;
+        color: white;
+      
+      }
+      .img{
+        width:10%;
+        height: 20%;
+        border: 0.1em solid black;
+        margin-left: 45%;
+       
+      }
+      .inps{
+        border: none;
+        color: red;
+        margin-left: 5%;
+       
+      }
+      .text{
+        background-color: rgb(175, 70, 87);
+        border-radius: 5%/35%;
+        padding-left: 3% ;
+        padding-right: 3%;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+        margin-left: 15%;
+        margin-right: 15%;
+        color: white;
+        height: 25%;
+        width: 70%;
+        font-size: 90%;
+        font-family: 'Sofia';
+      }
+      </style>
+ <div class="col-sm">
+      <div class="badge-badge-danger"><h1>Breast Cancer Prediction</h1>
+    </div>
+    <div class="right">
+      <div class="text"><h2>Breast cancer is cancer that develops from breast tissue. Signs of breast cancer may include a lump in the breast, a change in breast shape, dimpling of the skin, fluid coming from the nipple, a newly inverted nipple, or a red or scaly patch of skin. In those with distant spread of the disease, there may be bone pain, swollen lymph nodes, shortness of breath, or yellow skin</h2></div>
+      <br><br>
+   <form action = "/predict" method = "post" enctype = "multipart/form-data">
+    <p> <input class="inps"  type = "file" name = "file" /></p>
+    <p> <input class="inp"  type = "submit" value = "upload"/></p>    
+   </form> 
+  
+  
+</div>
+</div>
+</body>
+</html>
